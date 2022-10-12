@@ -30,6 +30,8 @@ The Palo Alto Networks 9 App uses the following log types:
 * [HIPMatch](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/hip-match-log-fields.html) Logs
 * [Traffic](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/traffic-log-fields.html) Logs
 * [Threat](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/threat-log-fields.html) Logs
+* [GlobalProtect v 9.1.0 - 9.1.2](https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/globalprotect-log-fields/globalprotect-log-fields-for-panos-910-through-912#id1ef9df3b-3c28-4739-a4ac-b15bea790a98) Logs
+* [GlobalProtect v 9.3.0 and Greater](https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/globalprotect-log-fields/globalprotect-log-fields-for-pan-os-913-and-later-releases#id5795bd71-1dc5-4f82-872d-a9ba6cb7cedf) Logs
 
 
 ### Sample Logs
@@ -147,6 +149,10 @@ To create a server profile specifying  the log destination, do the following:
     * [USERID](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/user-id-log-fields.html)
      ```
      ,$receive_time,$serial,$type,$subtype,,$time_generated,$vsys,$ip,$user,$datasourcename,$eventid,$repeatcnt,$timeout,$beginport,$endport,$datasource,$datasourcetype,$seqno,$actionflags,$dg_hier_level_1,$dg_hier_level_2,$dg_hier_level_3,$dg_hier_level_4,$vsys_name,$device_name,$vsys_id,$factortype,$factorcompletiontime,$factorno,,,$ugflags,$userbysource<Token from Step 1>
+
+    * [GlobalProtect](https://docs.paloaltonetworks.com/pan-os/9-1/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/globalprotect-log-fields/globalprotect-log-fields-for-pan-os-913-and-later-releases#id5795bd71-1dc5-4f82-872d-a9ba6cb7cedf)
+     ```
+     ,$receive_time,$serial,$type,$subtype,,$time_generated,$vsys,$eventid,$stage,$auth_method,$tunnel_type,$srcuser,$srcregion,$machinename,$public_ip,$public_ipv6,$private_ip,$private_ipv6,$hostid,$serialnumber,$client_ver,$client_os,$client_os_ver,$repeatcnt,$reason,$error,$opaque,$status,$location,$login_duration,$connect_method,$error_code,$portal,,$seqno,$actionflags <Token from Step 1>
      ```
 7. Click **OK**.
 8. Commit the changes.
